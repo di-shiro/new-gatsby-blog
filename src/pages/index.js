@@ -27,7 +27,7 @@ export default ({ data }) => {
 
       <div>
         <h1>Markup text の表示テスト</h1>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <h4>{data.allMarkdownRemark.totalCount} posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <BlogLink to={node.fields.slug}>
